@@ -1,7 +1,7 @@
 import unittest
 from conversor import (celsius_para_fahrenheit, fahrenheit_para_celsius, celsius_para_kelvin, kelvin_para_celsius,fahrenheit_para_kelvin, kelvin_para_fahrenheit, metros_para_quilometros, quilometros_para_metros, metros_para_centimetros, quilometros_para_centimetros)
 
-class TestConversions(unittest.TestCase):
+class TestConversor(unittest.TestCase):
 
     # Testes de conversão de temperatura...
     
@@ -26,4 +26,5 @@ class TestConversions(unittest.TestCase):
         self.assertAlmostEqual(quilometros_para_centimetros(5), 500000)
         self.assertAlmostEqual(quilometros_para_centimetros(0), 0)
 
- 
+if __name__ == '__main__':
+    unittest.main()
